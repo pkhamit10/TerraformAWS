@@ -43,7 +43,6 @@ resource "aws_s3_object" "error" {
   acl = "public-read"
   content_type = "text/html"
 }
-
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.mybucket.id
 
