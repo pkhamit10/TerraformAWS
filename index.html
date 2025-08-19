@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+</head>
+<style>
+  /* Global styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  animation: slideDown 1s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+section#projects {
+  padding: 2em;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.7s ease both;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #2575fc;
+  color: white;
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.review {
+  font-style: italic;
+  margin-top: 0.8em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #eee;
+  font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm PK — a passionate developer.</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A real-time weather app using OpenWeatherMap API.</p>
+      <span class="tag">JavaScript</span>
+      <div class="review">⭐️⭐️⭐️⭐️ - "Very accurate and user-friendly!"</div>
+    </div>
+
+    <div class="project">
+      <h3>Task Manager</h3>
+      <p>A simple task manager with deadline tracking.</p>
+      <span class="tag">React</span>
+      <div class="review">⭐️⭐️⭐️⭐️⭐️ - "Boosted my productivity. Clean UI!"</div>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>This very website — built with HTML, CSS, and some cool animations.</p>
+      <span class="tag">HTML + CSS</span>
+      <div class="review">⭐️⭐️⭐️⭐️ - "Elegant and simple design!"</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>
